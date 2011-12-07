@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A11B9BBB148BDF6000F6AD10 /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = A11B9BBA148BDF6000F6AD10 /* Trip.m */; };
+		A11B9BBE148BDF7400F6AD10 /* Destination.m in Sources */ = {isa = PBXBuildFile; fileRef = A11B9BBD148BDF7400F6AD10 /* Destination.m */; };
+		A11B9BC0148BDFAD00F6AD10 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11B9BBF148BDFAD00F6AD10 /* CoreLocation.framework */; };
+		A11B9BC2148BDFC000F6AD10 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11B9BC1148BDFC000F6AD10 /* MapKit.framework */; };
+		A11B9BC6148BEDC500F6AD10 /* ContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11B9BC5148BEDC500F6AD10 /* ContentController.m */; };
+		A11B9BC9148BF60200F6AD10 /* WeatherController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11B9BC8148BF60200F6AD10 /* WeatherController.m */; };
+		A11B9BCF148C122600F6AD10 /* EventsController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11B9BCE148C122600F6AD10 /* EventsController.m */; };
+		A11B9BD2148C123F00F6AD10 /* EventPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = A11B9BD1148C123F00F6AD10 /* EventPageController.m */; };
+		A11B9BD5148C160500F6AD10 /* Events.m in Sources */ = {isa = PBXBuildFile; fileRef = A11B9BD4148C160500F6AD10 /* Events.m */; };
+		A16BF0F714894B2E00EE6041 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16BF0F614894B2E00EE6041 /* UIKit.framework */; };
+		A16BF0F914894B2E00EE6041 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16BF0F814894B2E00EE6041 /* Foundation.framework */; };
+		A16BF0FB14894B2E00EE6041 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16BF0FA14894B2E00EE6041 /* CoreGraphics.framework */; };
+		A16BF10114894B2E00EE6041 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A16BF0FF14894B2E00EE6041 /* InfoPlist.strings */; };
+		A16BF10314894B2E00EE6041 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A16BF10214894B2E00EE6041 /* main.m */; };
+		A16BF10714894B2E00EE6041 /* RoadTripAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A16BF10614894B2E00EE6041 /* RoadTripAppDelegate.m */; };
+		A16BF10A14894B2E00EE6041 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16BF10814894B2E00EE6041 /* MainStoryboard_iPhone.storyboard */; };
+		A16BF10D14894B2E00EE6041 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16BF10B14894B2E00EE6041 /* MainStoryboard_iPad.storyboard */; };
+		A16BF11014894B2E00EE6041 /* RoadTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16BF10F14894B2E00EE6041 /* RoadTripViewController.m */; };
+		A16BF12414894DBC00EE6041 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A16BF11714894DBC00EE6041 /* AppIcon.png */; };
+		A16BF12514894DBC00EE6041 /* BurnRubber.aif in Resources */ = {isa = PBXBuildFile; fileRef = A16BF11814894DBC00EE6041 /* BurnRubber.aif */; };
+		A16BF12614894DBC00EE6041 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = A16BF11914894DBC00EE6041 /* Button.png */; };
+		A16BF12714894DBC00EE6041 /* Button0.png in Resources */ = {isa = PBXBuildFile; fileRef = A16BF11A14894DBC00EE6041 /* Button0.png */; };
+		A16BF12814894DBC00EE6041 /* Button1.png in Resources */ = {isa = PBXBuildFile; fileRef = A16BF11B14894DBC00EE6041 /* Button1.png */; };
+		A16BF12914894DBC00EE6041 /* CarImage.png in Resources */ = {isa = PBXBuildFile; fileRef = A16BF11C14894DBC00EE6041 /* CarImage.png */; };
+		A16BF12A14894DBC00EE6041 /* CarRunning.aif in Resources */ = {isa = PBXBuildFile; fileRef = A16BF11D14894DBC00EE6041 /* CarRunning.aif */; };
+		A16BF12B14894DBC00EE6041 /* DestinationImage.png in Resources */ = {isa = PBXBuildFile; fileRef = A16BF11E14894DBC00EE6041 /* DestinationImage.png */; };
+		A16BF12C14894DBC00EE6041 /* NavBarImage.png in Resources */ = {isa = PBXBuildFile; fileRef = A16BF11F14894DBC00EE6041 /* NavBarImage.png */; };
+		A16BF12D14894DBC00EE6041 /* NYCImage.png in Resources */ = {isa = PBXBuildFile; fileRef = A16BF12014894DBC00EE6041 /* NYCImage.png */; };
+		A16BF12E14894DBC00EE6041 /* READ ME FIRST.txt in Resources */ = {isa = PBXBuildFile; fileRef = A16BF12114894DBC00EE6041 /* READ ME FIRST.txt */; };
+		A16BF12F14894DBC00EE6041 /* SeeTheUSA.png in Resources */ = {isa = PBXBuildFile; fileRef = A16BF12214894DBC00EE6041 /* SeeTheUSA.png */; };
+		A16BF13014894DBC00EE6041 /* SFImage.png in Resources */ = {isa = PBXBuildFile; fileRef = A16BF12314894DBC00EE6041 /* SFImage.png */; };
+		A1ADF2F8148AC52A0046A3A2 /* carWheelie2.png in Resources */ = {isa = PBXBuildFile; fileRef = A1ADF2F7148AC52A0046A3A2 /* carWheelie2.png */; };
+		A1ADF2FB148ACBF30046A3A2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1ADF2FA148ACBF30046A3A2 /* AVFoundation.framework */; };
+		A1ADF2FD148AD1770046A3A2 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1ADF2FC148AD1770046A3A2 /* AudioToolbox.framework */; };
+		A1B6F790148AF3BA003913D1 /* Destinations.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1B6F78F148AF3BA003913D1 /* Destinations.plist */; };
+		A1E4AC5A148A9732008ED9FA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E4AC59148A9732008ED9FA /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A1E4AC5C148A9847008ED9FA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E4AC5B148A9847008ED9FA /* SystemConfiguration.framework */; };
+		A1E4AC5E148AC081008ED9FA /* carWheelie.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E4AC5D148AC081008ED9FA /* carWheelie.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A11B9BB9148BDF6000F6AD10 /* Trip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trip.h; sourceTree = "<group>"; };
+		A11B9BBA148BDF6000F6AD10 /* Trip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trip.m; sourceTree = "<group>"; };
+		A11B9BBC148BDF7400F6AD10 /* Destination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Destination.h; sourceTree = "<group>"; };
+		A11B9BBD148BDF7400F6AD10 /* Destination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Destination.m; sourceTree = "<group>"; };
+		A11B9BBF148BDFAD00F6AD10 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A11B9BC1148BDFC000F6AD10 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A11B9BC4148BEDC500F6AD10 /* ContentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentController.h; sourceTree = "<group>"; };
+		A11B9BC5148BEDC500F6AD10 /* ContentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentController.m; sourceTree = "<group>"; };
+		A11B9BC7148BF60200F6AD10 /* WeatherController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherController.h; sourceTree = "<group>"; };
+		A11B9BC8148BF60200F6AD10 /* WeatherController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherController.m; sourceTree = "<group>"; };
+		A11B9BCD148C122600F6AD10 /* EventsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsController.h; sourceTree = "<group>"; };
+		A11B9BCE148C122600F6AD10 /* EventsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsController.m; sourceTree = "<group>"; };
+		A11B9BD0148C123F00F6AD10 /* EventPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventPageController.h; sourceTree = "<group>"; };
+		A11B9BD1148C123F00F6AD10 /* EventPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventPageController.m; sourceTree = "<group>"; };
+		A11B9BD3148C160500F6AD10 /* Events.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Events.h; sourceTree = "<group>"; };
+		A11B9BD4148C160500F6AD10 /* Events.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Events.m; sourceTree = "<group>"; };
+		A16BF0F214894B2E00EE6041 /* RoadTrip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoadTrip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A16BF0F614894B2E00EE6041 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A16BF0F814894B2E00EE6041 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A16BF0FA14894B2E00EE6041 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A16BF0FE14894B2E00EE6041 /* RoadTrip-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RoadTrip-Info.plist"; sourceTree = "<group>"; };
+		A16BF10014894B2E00EE6041 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A16BF10214894B2E00EE6041 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A16BF10414894B2E00EE6041 /* RoadTrip-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RoadTrip-Prefix.pch"; sourceTree = "<group>"; };
+		A16BF10514894B2E00EE6041 /* RoadTripAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoadTripAppDelegate.h; sourceTree = "<group>"; };
+		A16BF10614894B2E00EE6041 /* RoadTripAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoadTripAppDelegate.m; sourceTree = "<group>"; };
+		A16BF10914894B2E00EE6041 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		A16BF10C14894B2E00EE6041 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		A16BF10E14894B2E00EE6041 /* RoadTripViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoadTripViewController.h; sourceTree = "<group>"; };
+		A16BF10F14894B2E00EE6041 /* RoadTripViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoadTripViewController.m; sourceTree = "<group>"; };
+		A16BF11714894DBC00EE6041 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
+		A16BF11814894DBC00EE6041 /* BurnRubber.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = BurnRubber.aif; sourceTree = "<group>"; };
+		A16BF11914894DBC00EE6041 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
+		A16BF11A14894DBC00EE6041 /* Button0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button0.png; sourceTree = "<group>"; };
+		A16BF11B14894DBC00EE6041 /* Button1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button1.png; sourceTree = "<group>"; };
+		A16BF11C14894DBC00EE6041 /* CarImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CarImage.png; sourceTree = "<group>"; };
+		A16BF11D14894DBC00EE6041 /* CarRunning.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = CarRunning.aif; sourceTree = "<group>"; };
+		A16BF11E14894DBC00EE6041 /* DestinationImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DestinationImage.png; sourceTree = "<group>"; };
+		A16BF11F14894DBC00EE6041 /* NavBarImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBarImage.png; sourceTree = "<group>"; };
+		A16BF12014894DBC00EE6041 /* NYCImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NYCImage.png; sourceTree = "<group>"; };
+		A16BF12114894DBC00EE6041 /* READ ME FIRST.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "READ ME FIRST.txt"; sourceTree = "<group>"; };
+		A16BF12214894DBC00EE6041 /* SeeTheUSA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SeeTheUSA.png; sourceTree = "<group>"; };
+		A16BF12314894DBC00EE6041 /* SFImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SFImage.png; sourceTree = "<group>"; };
+		A1ADF2F7148AC52A0046A3A2 /* carWheelie2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carWheelie2.png; sourceTree = "<group>"; };
+		A1ADF2FA148ACBF30046A3A2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A1ADF2FC148AD1770046A3A2 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A1B6F78F148AF3BA003913D1 /* Destinations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Destinations.plist; sourceTree = "<group>"; };
+		A1E4AC58148A9732008ED9FA /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		A1E4AC59148A9732008ED9FA /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		A1E4AC5B148A9847008ED9FA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A1E4AC5D148AC081008ED9FA /* carWheelie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carWheelie.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A16BF0EF14894B2E00EE6041 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A11B9BC2148BDFC000F6AD10 /* MapKit.framework in Frameworks */,
+				A11B9BC0148BDFAD00F6AD10 /* CoreLocation.framework in Frameworks */,
+				A1ADF2FD148AD1770046A3A2 /* AudioToolbox.framework in Frameworks */,
+				A1ADF2FB148ACBF30046A3A2 /* AVFoundation.framework in Frameworks */,
+				A1E4AC5C148A9847008ED9FA /* SystemConfiguration.framework in Frameworks */,
+				A16BF0F714894B2E00EE6041 /* UIKit.framework in Frameworks */,
+				A16BF0F914894B2E00EE6041 /* Foundation.framework in Frameworks */,
+				A16BF0FB14894B2E00EE6041 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A11B9BB7148BDF0A00F6AD10 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A11B9BBC148BDF7400F6AD10 /* Destination.h */,
+				A11B9BBD148BDF7400F6AD10 /* Destination.m */,
+				A11B9BB9148BDF6000F6AD10 /* Trip.h */,
+				A11B9BBA148BDF6000F6AD10 /* Trip.m */,
+				A11B9BD3148C160500F6AD10 /* Events.h */,
+				A11B9BD4148C160500F6AD10 /* Events.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A11B9BC3148BED7500F6AD10 /* View Controllers Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A11B9BC4148BEDC500F6AD10 /* ContentController.h */,
+				A11B9BC5148BEDC500F6AD10 /* ContentController.m */,
+				A11B9BC7148BF60200F6AD10 /* WeatherController.h */,
+				A11B9BC8148BF60200F6AD10 /* WeatherController.m */,
+				A11B9BCD148C122600F6AD10 /* EventsController.h */,
+				A11B9BCE148C122600F6AD10 /* EventsController.m */,
+				A11B9BD0148C123F00F6AD10 /* EventPageController.h */,
+				A11B9BD1148C123F00F6AD10 /* EventPageController.m */,
+			);
+			name = "View Controllers Classes";
+			sourceTree = "<group>";
+		};
+		A16BF0E714894B2D00EE6041 = {
+			isa = PBXGroup;
+			children = (
+				A16BF11614894DBC00EE6041 /* RoadTrip Resources */,
+				A16BF0FC14894B2E00EE6041 /* RoadTrip */,
+				A16BF0F514894B2E00EE6041 /* Frameworks */,
+				A16BF0F314894B2E00EE6041 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A16BF0F314894B2E00EE6041 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A16BF0F214894B2E00EE6041 /* RoadTrip.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A16BF0F514894B2E00EE6041 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A11B9BC1148BDFC000F6AD10 /* MapKit.framework */,
+				A11B9BBF148BDFAD00F6AD10 /* CoreLocation.framework */,
+				A1ADF2FC148AD1770046A3A2 /* AudioToolbox.framework */,
+				A1ADF2FA148ACBF30046A3A2 /* AVFoundation.framework */,
+				A1E4AC5B148A9847008ED9FA /* SystemConfiguration.framework */,
+				A1E4AC58148A9732008ED9FA /* Reachability.h */,
+				A1E4AC59148A9732008ED9FA /* Reachability.m */,
+				A16BF0F614894B2E00EE6041 /* UIKit.framework */,
+				A16BF0F814894B2E00EE6041 /* Foundation.framework */,
+				A16BF0FA14894B2E00EE6041 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A16BF0FC14894B2E00EE6041 /* RoadTrip */ = {
+			isa = PBXGroup;
+			children = (
+				A11B9BC3148BED7500F6AD10 /* View Controllers Classes */,
+				A11B9BB7148BDF0A00F6AD10 /* Model */,
+				A16BF10514894B2E00EE6041 /* RoadTripAppDelegate.h */,
+				A16BF10614894B2E00EE6041 /* RoadTripAppDelegate.m */,
+				A16BF10814894B2E00EE6041 /* MainStoryboard_iPhone.storyboard */,
+				A16BF10B14894B2E00EE6041 /* MainStoryboard_iPad.storyboard */,
+				A16BF10E14894B2E00EE6041 /* RoadTripViewController.h */,
+				A16BF10F14894B2E00EE6041 /* RoadTripViewController.m */,
+				A16BF0FD14894B2E00EE6041 /* Supporting Files */,
+			);
+			path = RoadTrip;
+			sourceTree = "<group>";
+		};
+		A16BF0FD14894B2E00EE6041 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A16BF0FE14894B2E00EE6041 /* RoadTrip-Info.plist */,
+				A16BF0FF14894B2E00EE6041 /* InfoPlist.strings */,
+				A16BF10214894B2E00EE6041 /* main.m */,
+				A16BF10414894B2E00EE6041 /* RoadTrip-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A16BF11614894DBC00EE6041 /* RoadTrip Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A1ADF2F7148AC52A0046A3A2 /* carWheelie2.png */,
+				A1E4AC5D148AC081008ED9FA /* carWheelie.png */,
+				A16BF11714894DBC00EE6041 /* AppIcon.png */,
+				A16BF11814894DBC00EE6041 /* BurnRubber.aif */,
+				A16BF11914894DBC00EE6041 /* Button.png */,
+				A16BF11A14894DBC00EE6041 /* Button0.png */,
+				A16BF11B14894DBC00EE6041 /* Button1.png */,
+				A16BF11C14894DBC00EE6041 /* CarImage.png */,
+				A16BF11D14894DBC00EE6041 /* CarRunning.aif */,
+				A16BF11E14894DBC00EE6041 /* DestinationImage.png */,
+				A16BF11F14894DBC00EE6041 /* NavBarImage.png */,
+				A16BF12014894DBC00EE6041 /* NYCImage.png */,
+				A16BF12114894DBC00EE6041 /* READ ME FIRST.txt */,
+				A16BF12214894DBC00EE6041 /* SeeTheUSA.png */,
+				A16BF12314894DBC00EE6041 /* SFImage.png */,
+				A1B6F78F148AF3BA003913D1 /* Destinations.plist */,
+			);
+			name = "RoadTrip Resources";
+			path = "RoadTrip/RoadTrip Resources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A16BF0F114894B2E00EE6041 /* RoadTrip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A16BF11314894B2E00EE6041 /* Build configuration list for PBXNativeTarget "RoadTrip" */;
+			buildPhases = (
+				A16BF0EE14894B2E00EE6041 /* Sources */,
+				A16BF0EF14894B2E00EE6041 /* Frameworks */,
+				A16BF0F014894B2E00EE6041 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoadTrip;
+			productName = RoadTrip;
+			productReference = A16BF0F214894B2E00EE6041 /* RoadTrip.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A16BF0E914894B2D00EE6041 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "waveOcean Software";
+			};
+			buildConfigurationList = A16BF0EC14894B2D00EE6041 /* Build configuration list for PBXProject "RoadTrip" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A16BF0E714894B2D00EE6041;
+			productRefGroup = A16BF0F314894B2E00EE6041 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A16BF0F114894B2E00EE6041 /* RoadTrip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A16BF0F014894B2E00EE6041 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A16BF10114894B2E00EE6041 /* InfoPlist.strings in Resources */,
+				A16BF10A14894B2E00EE6041 /* MainStoryboard_iPhone.storyboard in Resources */,
+				A16BF10D14894B2E00EE6041 /* MainStoryboard_iPad.storyboard in Resources */,
+				A16BF12414894DBC00EE6041 /* AppIcon.png in Resources */,
+				A16BF12514894DBC00EE6041 /* BurnRubber.aif in Resources */,
+				A16BF12614894DBC00EE6041 /* Button.png in Resources */,
+				A16BF12714894DBC00EE6041 /* Button0.png in Resources */,
+				A16BF12814894DBC00EE6041 /* Button1.png in Resources */,
+				A16BF12914894DBC00EE6041 /* CarImage.png in Resources */,
+				A16BF12A14894DBC00EE6041 /* CarRunning.aif in Resources */,
+				A16BF12B14894DBC00EE6041 /* DestinationImage.png in Resources */,
+				A16BF12C14894DBC00EE6041 /* NavBarImage.png in Resources */,
+				A16BF12D14894DBC00EE6041 /* NYCImage.png in Resources */,
+				A16BF12E14894DBC00EE6041 /* READ ME FIRST.txt in Resources */,
+				A16BF12F14894DBC00EE6041 /* SeeTheUSA.png in Resources */,
+				A16BF13014894DBC00EE6041 /* SFImage.png in Resources */,
+				A1E4AC5E148AC081008ED9FA /* carWheelie.png in Resources */,
+				A1ADF2F8148AC52A0046A3A2 /* carWheelie2.png in Resources */,
+				A1B6F790148AF3BA003913D1 /* Destinations.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A16BF0EE14894B2E00EE6041 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A16BF10314894B2E00EE6041 /* main.m in Sources */,
+				A16BF10714894B2E00EE6041 /* RoadTripAppDelegate.m in Sources */,
+				A16BF11014894B2E00EE6041 /* RoadTripViewController.m in Sources */,
+				A1E4AC5A148A9732008ED9FA /* Reachability.m in Sources */,
+				A11B9BBB148BDF6000F6AD10 /* Trip.m in Sources */,
+				A11B9BBE148BDF7400F6AD10 /* Destination.m in Sources */,
+				A11B9BC6148BEDC500F6AD10 /* ContentController.m in Sources */,
+				A11B9BC9148BF60200F6AD10 /* WeatherController.m in Sources */,
+				A11B9BCF148C122600F6AD10 /* EventsController.m in Sources */,
+				A11B9BD2148C123F00F6AD10 /* EventPageController.m in Sources */,
+				A11B9BD5148C160500F6AD10 /* Events.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A16BF0FF14894B2E00EE6041 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A16BF10014894B2E00EE6041 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A16BF10814894B2E00EE6041 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A16BF10914894B2E00EE6041 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		A16BF10B14894B2E00EE6041 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A16BF10C14894B2E00EE6041 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A16BF11114894B2E00EE6041 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A16BF11214894B2E00EE6041 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A16BF11414894B2E00EE6041 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoadTrip/RoadTrip-Prefix.pch";
+				INFOPLIST_FILE = "RoadTrip/RoadTrip-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A16BF11514894B2E00EE6041 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoadTrip/RoadTrip-Prefix.pch";
+				INFOPLIST_FILE = "RoadTrip/RoadTrip-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A16BF0EC14894B2D00EE6041 /* Build configuration list for PBXProject "RoadTrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A16BF11114894B2E00EE6041 /* Debug */,
+				A16BF11214894B2E00EE6041 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A16BF11314894B2E00EE6041 /* Build configuration list for PBXNativeTarget "RoadTrip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A16BF11414894B2E00EE6041 /* Debug */,
+				A16BF11514894B2E00EE6041 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A16BF0E914894B2D00EE6041 /* Project object */;
+}
