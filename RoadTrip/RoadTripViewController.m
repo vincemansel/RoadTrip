@@ -170,9 +170,9 @@
 }
 - (void)returnCar
 {
-    UIImage *carWheelie = [UIImage imageNamed:@"carWheelie2.png"];
+//    UIImage *carWheelie = [UIImage imageNamed:@"carWheelie2.png"];
 //    carWheelie. = CGSizeMake(self.car.image.size.width * 2, self.car.image.size.height);
-    self.car.image = carWheelie;
+//    self.car.image = carWheelie;
 
     CGPoint center = CGPointMake(car.center.x, self.view.frame.origin.y +
                                  self.view.frame.size.height - car.frame.size.height/2);
@@ -195,7 +195,7 @@
     
     void (^animation)() = ^(){
         car.transform = transform;
-        self.car.image = [UIImage imageNamed:@"carImage.png"];
+//        self.car.image = [UIImage imageNamed:@"carImage.png"];
     };
     
     void (^completion)(BOOL) = ^(BOOL finished){

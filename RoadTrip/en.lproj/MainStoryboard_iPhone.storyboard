@@ -271,13 +271,46 @@
         <scene sceneID="BTZ-hO-E2f">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CHc-gR-2Iu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="Map" title="Map" id="5GN-AN-kUH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Map" title="Map" id="5GN-AN-kUH" customClass="MapController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cxZ-NY-J26">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="xzi-yi-arC">
+                                <rect key="frame" x="0.0" y="372" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" id="esT-lT-pUl">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="rTO-Ec-jdJ">
+                                            <rect key="frame" x="6" y="8" width="207" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="Standard"/>
+                                                <segment title="Satellite"/>
+                                                <segment title="Hybrid"/>
+                                            </segments>
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <connections>
+                                                <action selector="mapType:" destination="5GN-AN-kUH" eventType="valueChanged" id="uPO-EP-1Mf"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="mOk-KB-jIR">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="372"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="5GN-AN-kUH" id="auT-WR-iIf"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Sg3-BZ-BMG"/>
+                    <connections>
+                        <outlet property="mapView" destination="mOk-KB-jIR" id="aBC-i2-B2L"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1829" y="1510"/>
@@ -331,6 +364,13 @@
         </class>
         <class className="EventsController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EventsController.h"/>
+        </class>
+        <class className="MapController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MapController.h"/>
+            <relationships>
+                <relationship kind="action" name="mapType:"/>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+            </relationships>
         </class>
         <class className="RoadTripViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RoadTripViewController.h"/>

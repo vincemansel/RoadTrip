@@ -23,7 +23,6 @@
 		A16BF10314894B2E00EE6041 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A16BF10214894B2E00EE6041 /* main.m */; };
 		A16BF10714894B2E00EE6041 /* RoadTripAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A16BF10614894B2E00EE6041 /* RoadTripAppDelegate.m */; };
 		A16BF10A14894B2E00EE6041 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16BF10814894B2E00EE6041 /* MainStoryboard_iPhone.storyboard */; };
-		A16BF10D14894B2E00EE6041 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A16BF10B14894B2E00EE6041 /* MainStoryboard_iPad.storyboard */; };
 		A16BF11014894B2E00EE6041 /* RoadTripViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A16BF10F14894B2E00EE6041 /* RoadTripViewController.m */; };
 		A16BF12414894DBC00EE6041 /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A16BF11714894DBC00EE6041 /* AppIcon.png */; };
 		A16BF12514894DBC00EE6041 /* BurnRubber.aif in Resources */ = {isa = PBXBuildFile; fileRef = A16BF11814894DBC00EE6041 /* BurnRubber.aif */; };
@@ -45,6 +44,7 @@
 		A1E4AC5A148A9732008ED9FA /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A1E4AC59148A9732008ED9FA /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A1E4AC5C148A9847008ED9FA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E4AC5B148A9847008ED9FA /* SystemConfiguration.framework */; };
 		A1E4AC5E148AC081008ED9FA /* carWheelie.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E4AC5D148AC081008ED9FA /* carWheelie.png */; };
+		A8189017148EFE7F000254AB /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8189016148EFE7F000254AB /* MapController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,7 +75,6 @@
 		A16BF10514894B2E00EE6041 /* RoadTripAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoadTripAppDelegate.h; sourceTree = "<group>"; };
 		A16BF10614894B2E00EE6041 /* RoadTripAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoadTripAppDelegate.m; sourceTree = "<group>"; };
 		A16BF10914894B2E00EE6041 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		A16BF10C14894B2E00EE6041 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		A16BF10E14894B2E00EE6041 /* RoadTripViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoadTripViewController.h; sourceTree = "<group>"; };
 		A16BF10F14894B2E00EE6041 /* RoadTripViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoadTripViewController.m; sourceTree = "<group>"; };
 		A16BF11714894DBC00EE6041 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
@@ -99,6 +98,8 @@
 		A1E4AC59148A9732008ED9FA /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		A1E4AC5B148A9847008ED9FA /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A1E4AC5D148AC081008ED9FA /* carWheelie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carWheelie.png; sourceTree = "<group>"; };
+		A8189015148EFE7F000254AB /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
+		A8189016148EFE7F000254AB /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +145,8 @@
 				A11B9BCE148C122600F6AD10 /* EventsController.m */,
 				A11B9BD0148C123F00F6AD10 /* EventPageController.h */,
 				A11B9BD1148C123F00F6AD10 /* EventPageController.m */,
+				A8189015148EFE7F000254AB /* MapController.h */,
+				A8189016148EFE7F000254AB /* MapController.m */,
 			);
 			name = "View Controllers Classes";
 			sourceTree = "<group>";
@@ -191,7 +194,6 @@
 				A16BF10514894B2E00EE6041 /* RoadTripAppDelegate.h */,
 				A16BF10614894B2E00EE6041 /* RoadTripAppDelegate.m */,
 				A16BF10814894B2E00EE6041 /* MainStoryboard_iPhone.storyboard */,
-				A16BF10B14894B2E00EE6041 /* MainStoryboard_iPad.storyboard */,
 				A16BF10E14894B2E00EE6041 /* RoadTripViewController.h */,
 				A16BF10F14894B2E00EE6041 /* RoadTripViewController.m */,
 				A16BF0FD14894B2E00EE6041 /* Supporting Files */,
@@ -287,7 +289,6 @@
 			files = (
 				A16BF10114894B2E00EE6041 /* InfoPlist.strings in Resources */,
 				A16BF10A14894B2E00EE6041 /* MainStoryboard_iPhone.storyboard in Resources */,
-				A16BF10D14894B2E00EE6041 /* MainStoryboard_iPad.storyboard in Resources */,
 				A16BF12414894DBC00EE6041 /* AppIcon.png in Resources */,
 				A16BF12514894DBC00EE6041 /* BurnRubber.aif in Resources */,
 				A16BF12614894DBC00EE6041 /* Button.png in Resources */,
@@ -325,6 +326,7 @@
 				A11B9BCF148C122600F6AD10 /* EventsController.m in Sources */,
 				A11B9BD2148C123F00F6AD10 /* EventPageController.m in Sources */,
 				A11B9BD5148C160500F6AD10 /* Events.m in Sources */,
+				A8189017148EFE7F000254AB /* MapController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,14 +347,6 @@
 				A16BF10914894B2E00EE6041 /* en */,
 			);
 			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		A16BF10B14894B2E00EE6041 /* MainStoryboard_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A16BF10C14894B2E00EE6041 /* en */,
-			);
-			name = MainStoryboard_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -412,6 +406,7 @@
 				GCC_PREFIX_HEADER = "RoadTrip/RoadTrip-Prefix.pch";
 				INFOPLIST_FILE = "RoadTrip/RoadTrip-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -423,6 +418,7 @@
 				GCC_PREFIX_HEADER = "RoadTrip/RoadTrip-Prefix.pch";
 				INFOPLIST_FILE = "RoadTrip/RoadTrip-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
