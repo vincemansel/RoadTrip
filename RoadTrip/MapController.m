@@ -7,9 +7,44 @@
 //
 
 #import "MapController.h"
+#import "RoadTripAppDelegate.h"
+#import "Trip.h"
 
 @implementation MapController
 @synthesize mapView;
+
+#pragma mark - Custom Methods
+
+- (void)setInitialRegion
+{
+    RoadTripAppDelegate* appDelegate = [[UIApplication sharedApplication] delegate];
+    MKCoordinateRegion region;
+    CLLocationCoordinate2D initialCoordinate = [appDelegate.trip destinationCoordinate];
+    region.center.latitude = initialCoordinate.latitude;
+    region.center.longitude = initialCoordinate.longitude;
+    region.span.latitudeDelta = .03;
+    region.span.longitudeDelta = .03;
+    [mapView setRegion:region animated:NO];
+}
+
+- (IBAction)mapType:(id)sender
+{
+    mapView.mapType = ((UISegmentedControl *) sender).selectedSegmentIndex;
+}
+
+- (void)mapViewDidFailLoadingMap:(MKMapView *)mapView withError:(NSError *)error
+{
+    NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Unable to load the map"
+                                                    message:@"Check to see if you have internet access"
+                                                   delegate:self
+                                          cancelButtonTitle:@"Thanks"
+                                          otherButtonTitles:nil];
+    [alert show];
+}
+
+#pragma mark - Supplied Stubs
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -37,13 +72,14 @@
 }
 */
 
-/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    mapView.delegate = self;
+    mapView.showsUserLocation = YES;
+    [self setInitialRegion];
 }
-*/
 
 - (void)viewDidUnload
 {
@@ -56,9 +92,8 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+//    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
-- (IBAction)mapType:(id)sender {
-}
 @end
