@@ -14,7 +14,8 @@
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 - (IBAction)mapType:(id)sender;
-- (void)setInitialRegion;
+//- (void)setInitialRegion;
 - (void)addAnnotations;
+- (MKCoordinateRegion)regionForAnnotationGroup:(NSArray *)group;
 
 @end
