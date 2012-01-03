@@ -45,6 +45,8 @@
 		A1E4AC5C148A9847008ED9FA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1E4AC5B148A9847008ED9FA /* SystemConfiguration.framework */; };
 		A1E4AC5E148AC081008ED9FA /* carWheelie.png in Resources */ = {isa = PBXBuildFile; fileRef = A1E4AC5D148AC081008ED9FA /* carWheelie.png */; };
 		A8189017148EFE7F000254AB /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8189016148EFE7F000254AB /* MapController.m */; };
+		A85059C014B39BBF00DD5290 /* PointOfInterest.m in Sources */ = {isa = PBXBuildFile; fileRef = A85059BF14B39BBF00DD5290 /* PointOfInterest.m */; };
+		A85059C414B39DA400DD5290 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A85059C314B39DA400DD5290 /* Annotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +102,10 @@
 		A1E4AC5D148AC081008ED9FA /* carWheelie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = carWheelie.png; sourceTree = "<group>"; };
 		A8189015148EFE7F000254AB /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
 		A8189016148EFE7F000254AB /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
+		A85059BE14B39BBF00DD5290 /* PointOfInterest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointOfInterest.h; sourceTree = "<group>"; };
+		A85059BF14B39BBF00DD5290 /* PointOfInterest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointOfInterest.m; sourceTree = "<group>"; };
+		A85059C214B39DA400DD5290 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		A85059C314B39DA400DD5290 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,10 @@
 				A11B9BBA148BDF6000F6AD10 /* Trip.m */,
 				A11B9BD3148C160500F6AD10 /* Events.h */,
 				A11B9BD4148C160500F6AD10 /* Events.m */,
+				A85059BE14B39BBF00DD5290 /* PointOfInterest.h */,
+				A85059BF14B39BBF00DD5290 /* PointOfInterest.m */,
+				A85059C214B39DA400DD5290 /* Annotation.h */,
+				A85059C314B39DA400DD5290 /* Annotation.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -327,6 +337,8 @@
 				A11B9BD2148C123F00F6AD10 /* EventPageController.m in Sources */,
 				A11B9BD5148C160500F6AD10 /* Events.m in Sources */,
 				A8189017148EFE7F000254AB /* MapController.m in Sources */,
+				A85059C014B39BBF00DD5290 /* PointOfInterest.m in Sources */,
+				A85059C414B39DA400DD5290 /* Annotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

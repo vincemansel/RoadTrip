@@ -19,5 +19,7 @@
 - (NSString *)weather;
 - (int)numberOfEvents;
 - (NSString *)getEvent:(int)index;
+- (NSArray *)createAnnotations;
+- (NSString *)mapTitle;
 
 @end

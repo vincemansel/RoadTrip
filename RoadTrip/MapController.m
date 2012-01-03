@@ -32,6 +32,12 @@
     mapView.mapType = ((UISegmentedControl *) sender).selectedSegmentIndex;
 }
 
+- (void)addAnnotations
+{
+    RoadTripAppDelegate* appDelegate = [[UIApplication sharedApplication] delegate];
+    [mapView addAnnotations:[appDelegate.trip createAnnotations]];
+}
+
 - (void)mapViewDidFailLoadingMap:(MKMapView *)mapView withError:(NSError *)error
 {
     NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
@@ -79,6 +85,9 @@
     mapView.delegate = self;
     mapView.showsUserLocation = YES;
     [self setInitialRegion];
+    RoadTripAppDelegate* appDelegate = [[UIApplication sharedApplication] delegate];
+    self.title = [appDelegate.trip mapTitle];
+    [self addAnnotations];
 }
 
 - (void)viewDidUnload

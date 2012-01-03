@@ -15,5 +15,6 @@
 
 - (IBAction)mapType:(id)sender;
 - (void)setInitialRegion;
+- (void)addAnnotations;
 
 @end
