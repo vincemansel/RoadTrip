@@ -10,6 +10,12 @@
 #import "RoadTripAppDelegate.h"
 #import "Trip.h"
 
+@interface MapController () {
+    
+    UIBarButtonItem *locateButton;
+}
+@end
+
 @implementation MapController
 @synthesize mapView;
 
@@ -36,6 +42,28 @@
 {
     RoadTripAppDelegate* appDelegate = [[UIApplication sharedApplication] delegate];
     [mapView addAnnotations:[appDelegate.trip createAnnotations]];
+}
+
+- (void)goToDestination:(id)sender
+{
+    [self setInitialRegion];
+    self.navigationItem.rightBarButtonItem.title = @"Locate";
+    self.navigationItem.rightBarButtonItem.action = @selector(goToLocation:);
+}
+
+- (void)goToLocation:(id)sender
+{
+    MKUserLocation *annotation = mapView.userLocation;
+    CLLocation *location = annotation.location;
+    if (nil == location) {
+        return;
+    }
+    CLLocationDistance distance = MAX(4*location.horizontalAccuracy, 500);
+    
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(location.coordinate, distance, distance);
+    [mapView setRegion:region animated:NO];
+    self.navigationItem.rightBarButtonItem.action = @selector(goToDestination:);
+    self.navigationItem.rightBarButtonItem.title = @"Destination";
 }
 
 - (void)mapViewDidFailLoadingMap:(MKMapView *)mapView withError:(NSError *)error
@@ -88,6 +116,10 @@
     RoadTripAppDelegate* appDelegate = [[UIApplication sharedApplication] delegate];
     self.title = [appDelegate.trip mapTitle];
     [self addAnnotations];
+    locateButton = [[UIBarButtonItem alloc] initWithTitle:@"Locate"
+                                                    style:UIBarButtonItemStylePlain
+                                                   target:self action:@selector(goToLocation:)];
+    self.navigationItem.rightBarButtonItem = locateButton;
 }
 
 - (void)viewDidUnload
